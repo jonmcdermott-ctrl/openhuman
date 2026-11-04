@@ -365,7 +365,7 @@ hmac = "0.12"
 # `tinyruntime` module owns that — which is what let `xz2` and its static
 # liblzma C build leave this manifest entirely.
 tar = "0.4"
-zip = { version = "2", default-features = false, features = ["deflate"] }
+zip = { version = "9", default-features = false, features = ["deflate"] }
 # gzip decoder for the Piper tar.gz binary releases on macOS / Linux. Already
 # pulled in transitively by zip's `deflate` feature; declared directly so
 # the installer module can `use flate2::read::GzDecoder`.
